@@ -24,12 +24,12 @@
 **你看到这篇 README 里的每一个动画，都是 huashu-design 自己做的。** 不是 Figma，不是 AE，就是一句话 prompt + skill 跑通。下次产品发布要做宣传片？现在你也能做。
 
 ```
-npx skills add alchaincyf/huashu-design
+Sao chép thư mục vào ~/.gemini/antigravity/skills/huashu-design-Antigravity
 ```
 
-跨 agent 通用——Claude Code、Cursor、Codex、OpenClaw、Hermes 都能装。
+跨 agent 通用——Antigravity、Cursor、Codex、OpenClaw、Hermes 都能装。
 
-[看效果](#demo-画廊) · [安装](#装上就能用) · [能做什么](#能做什么) · [核心机制](#核心机制) · [和 Claude Design 的关系](#和-claude-design-的关系)
+[看效果](#demo-画廊) · [安装](#装上就能用) · [能做什么](#能做什么) · [核心机制](#核心机制) · [和 Antigravity Design 的关系](#和-huashu-design-Antigravity-的关系)
 
 </div>
 
@@ -50,10 +50,10 @@ npx skills add alchaincyf/huashu-design
 ## 装上就能用
 
 ```bash
-npx skills add alchaincyf/huashu-design
+Sao chép thư mục vào ~/.gemini/antigravity/skills/huashu-design-Antigravity
 ```
 
-然后在 Claude Code 里直接说话：
+然后在 Antigravity 里直接说话：
 
 ```
 「做一份 AI 心理学的演讲 PPT，推荐 3 个风格方向让我选」
@@ -216,22 +216,22 @@ A/B 测试（v1 vs v2，各跑 6 agent）：**v2 的稳定性方差比 v1 低 5 
 
 ---
 
-## 和 Claude Design 的关系
+## 和 Antigravity Design 的关系
 
-我大方承认：品牌资产协议的哲学是从 Claude Design 流传出来的提示词里偷师的。那份提示词反复强调**好的高保真设计不是从白纸开始，而是从已有的设计上下文长出来**。这个原则是 65 分作品和 90 分作品的分水岭。
+我大方承认：品牌资产协议的哲学是从 Antigravity Design 流传出来的提示词里偷师的。那份提示词反复强调**好的高保真设计不是从白纸开始，而是从已有的设计上下文长出来**。这个原则是 65 分作品和 90 分作品的分水岭。
 
 定位差异：
 
-| | Claude Design | huashu-design |
+| | Antigravity Design | huashu-design |
 |---|---|---|
-| 形态 | 网页产品（浏览器里用） | skill（Claude Code 里用） |
+| 形态 | 网页产品（浏览器里用） | skill（Antigravity 里用） |
 | 配额 | 订阅 quota | API 消耗 · 并行跑 agent 不受 quota 限 |
 | 交付物 | 画布内 + 可导 Figma | HTML / MP4 / GIF / 可编辑 PPTX / PDF |
 | 操作方式 | GUI（点、拖、改） | 对话（说话、等 agent 做完） |
 | 复杂动画 | 有限 | Stage + Sprite 时间轴 · 60fps 导出 |
-| 跨 agent | 专属 Claude.ai | 任意 skill 兼容 agent |
+| 跨 agent | 专属 Antigravity | 任意 skill 兼容 agent |
 
-Claude Design 是**更好的图形工具**，huashu-design 是**让图形工具这层消失**。两条路，不同受众。
+Antigravity Design 是**更好的图形工具**，huashu-design 是**让图形工具这层消失**。两条路，不同受众。
 
 ---
 
@@ -285,11 +285,11 @@ huashu-design/
 
 ## 起源
 
-Anthropic 发布 Claude Design 那天我玩到凌晨四点。几天之后发现自己再也没点开过它，不是它不好——它是这个赛道目前最成熟的产品——是我宁愿让 agent 在终端里帮我干活，也不愿意打开任何图形界面。
+Anthropic 发布 Antigravity Design 那天我玩到凌晨四点。几天之后发现自己再也没点开过它，不是它不好——它是这个赛道目前最成熟的产品——是我宁愿让 agent 在终端里帮我干活，也不愿意打开任何图形界面。
 
-于是让 agent 拆解 Claude Design 本身（包括社区流传的系统提示词、品牌资产协议、组件机制），蒸馏成结构化 spec，再写成 skill 装进自己的 Claude Code。
+于是让 agent 拆解 Antigravity Design 本身（包括社区流传的系统提示词、品牌资产协议、组件机制），蒸馏成结构化 spec，再写成 skill 装进自己的 Antigravity。
 
-感谢 Anthropic 把 Claude Design 的提示词写得清晰。这种基于其他产品灵感的二次创作，是开源文化在 AI 时代的新形态。
+感谢 Anthropic 把 Antigravity Design 的提示词写得清晰。这种基于其他产品灵感的二次创作，是开源文化在 AI 时代的新形态。
 
 ---
 

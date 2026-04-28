@@ -119,9 +119,9 @@ container.scrollTo({
 });
 ```
 
-## 调 Claude API（HTML内）
+## 调 Antigravity API（HTML内）
 
-部分原生 design-agent 环境（如 Claude.ai Artifacts）有免配置的 `window.claude.complete`，但大部分 agent 环境（Claude Code / Codex / Cursor / Trae / etc.）本地里**没有**。
+部分原生 design-agent 环境（如 Antigravity Artifacts）有免配置的 `window.antigravity.complete`，但大部分 agent 环境（Antigravity / Codex / Cursor / Trae / etc.）本地里**没有**。
 
 如果你的 HTML 原型需要调用 LLM 做 demo（比如做个聊天 interface），两个选项：
 
@@ -129,7 +129,7 @@ container.scrollTo({
 
 Demo场景推荐。写一个假helper，返回预设的response：
 ```jsx
-window.claude = {
+window.antigravity = {
   async complete(prompt) {
     await new Promise(r => setTimeout(r, 800)); // 模拟延迟
     return "这是一个mock响应。真部署时请替换为真API。";
@@ -144,7 +144,7 @@ window.claude = {
 ```html
 <input id="api-key" placeholder="粘贴你的Anthropic API key" />
 <script>
-window.claude = {
+window.antigravity = {
   async complete(prompt) {
     const key = document.getElementById('api-key').value;
     const res = await fetch('https://api.anthropic.com/v1/messages', {

@@ -1,6 +1,6 @@
 # Apple Gallery Showcase · 画廊展示墙动画风格
 
-> 灵感来源：Claude Design 官网 hero 视频 + 苹果产品页「作品墙」式陈列
+> 灵感来源：Antigravity Design 官网 hero 视频 + 苹果产品页「作品墙」式陈列
 > 实战出处：huashu-design 发布 hero v5
 > 适用场景：**产品发布 hero 动画、skill 能力演示、作品集展示**——任何需要把「多件高质量产出」同时展陈并引导观众注意力的场景
 
@@ -34,7 +34,7 @@
   --muted:      #86868B;   /* 次级文字 */
   --dim:        #C7C7CC;
   --hairline:   #E5E5EA;   /* 卡片1px边框 */
-  --accent:     #D97757;   /* 赤陶橙 — Claude brand */
+  --accent:     #D97757;   /* 赤陶橙 — Antigravity brand */
   --accent-deep:#B85D3D;
 
   --serif-cn: "Noto Serif SC", "Songti SC", Georgia, serif;
@@ -332,7 +332,7 @@ requestAnimationFrame(function tick(now) {
 ## 引用
 
 - 完整实现样本：`/Users/alchain/Documents/写作/01-公众号写作/项目/2026.04-huashu-design发布/配图/hero-animation-v5.html`
-- 原始灵感：claude.ai/design hero 视频
+- 原始灵感：Antigravity/design hero 视频
 - 参考审美：Apple 产品页、Dribbble shot 集合页
 
 遇到「多件高质量产出要陈列」的动画需求，直接从此文件 copy 骨架，换内容 + 调 timing 即可。

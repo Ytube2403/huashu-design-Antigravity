@@ -13,7 +13,7 @@
 
 <br>
 
-**Say one sentence to your agent — Claude Code, Cursor, Codex, OpenClaw, Hermes all work.**
+**Say one sentence to your agent — Antigravity, Cursor, Codex, OpenClaw, Hermes all work.**
 
 <br>
 
@@ -24,10 +24,10 @@ Not "decent for AI" quality — it looks like a real design team made it. Give t
 **Every animation in this README was made by huashu-design itself.** No Figma, no After Effects — just a sentence + skill run. Next product launch needs a promo video? You can make it too.
 
 ```
-npx skills add alchaincyf/huashu-design
+Sao chép thư mục vào ~/.gemini/antigravity/skills/huashu-design-Antigravity
 ```
 
-[See it work](#demo-gallery) · [Install](#install) · [What it does](#what-it-does) · [How it works](#core-mechanics) · [vs. Claude Design](#vs-claude-design)
+[See it work](#demo-gallery) · [Install](#install) · [What it does](#what-it-does) · [How it works](#core-mechanics) · [vs. Antigravity Design](#vs-huashu-design-Antigravity)
 
 > 📖 **Note for English readers**: this skill is built by a Chinese-speaking developer. The skill's agent prompts (`SKILL.md`, `references/*.md`) are in Chinese but the agent is bilingual — works fine with English tasks. The demos below are the English parallel versions; the Chinese ones are in the default-named files (see the Chinese [README.md](README.md)).
 
@@ -48,10 +48,10 @@ npx skills add alchaincyf/huashu-design
 ## Install
 
 ```bash
-npx skills add alchaincyf/huashu-design
+Sao chép thư mục vào ~/.gemini/antigravity/skills/huashu-design-Antigravity
 ```
 
-Then just talk to Claude Code:
+Then just talk to Antigravity:
 
 ```
 "Make a keynote for AI psychology. Give me 3 style directions to pick from."
@@ -60,7 +60,7 @@ Then just talk to Claude Code:
 "Run a 5-dimension expert review on this design."
 ```
 
-No buttons, no panels, no Figma plugin. Agent-agnostic — drops into Claude Code, Cursor, Trae, Hermes, OpenClaw, or any markdown-skill-capable agent.
+No buttons, no panels, no Figma plugin. Agent-agnostic — drops into Antigravity, Cursor, Trae, Hermes, OpenClaw, or any markdown-skill-capable agent.
 
 ---
 
@@ -202,22 +202,22 @@ Avoid the visual common denominator of AI output (purple gradients / emoji icons
 
 ---
 
-## vs. Claude Design
+## vs. Antigravity Design
 
-I'll be upfront: the Core Asset Protocol's philosophy was lifted from system prompts Anthropic wrote for Claude Design. That prompt hammers home a single idea — **great hi-fi design doesn't start from a blank page, it grows from existing design context**. That one principle is the difference between a 65-point design and a 90-point design.
+I'll be upfront: the Core Asset Protocol's philosophy was lifted from system prompts Anthropic wrote for Antigravity Design. That prompt hammers home a single idea — **great hi-fi design doesn't start from a blank page, it grows from existing design context**. That one principle is the difference between a 65-point design and a 90-point design.
 
 Positioning differences:
 
-| | Claude Design | huashu-design |
+| | Antigravity Design | huashu-design |
 |---|---|---|
-| Form | Web product (used in browser) | Skill (used in Claude Code) |
+| Form | Web product (used in browser) | Skill (used in Antigravity) |
 | Quota | Subscription quota | API usage · parallel agents unblocked |
 | Output | Canvas + Figma export | HTML / MP4 / GIF / editable PPTX / PDF |
 | Interaction | GUI (click, drag, edit) | Conversation (tell agent, wait) |
 | Complex animation | Limited | Stage + Sprite timeline · 60fps export |
-| Agent compatibility | Claude.ai only | Claude Code / Cursor / Trae / Hermes / OpenClaw |
+| Agent compatibility | Antigravity only | Antigravity / Cursor / Trae / Hermes / OpenClaw |
 
-Claude Design is a **better graphics tool**. Huashu-design makes **the graphics-tool layer disappear**. Two paths, different audiences.
+Antigravity Design is a **better graphics tool**. Huashu-design makes **the graphics-tool layer disappear**. Two paths, different audiences.
 
 ---
 
@@ -272,11 +272,11 @@ huashu-design/
 
 ## Origin Story
 
-The day Anthropic launched Claude Design I played with it until 4 a.m. A few days later I realized I hadn't opened it once since — not because it's bad (it's the most polished product in the category) but because I'd rather have an agent work in my terminal than open any graphical UI.
+The day Anthropic launched Antigravity Design I played with it until 4 a.m. A few days later I realized I hadn't opened it once since — not because it's bad (it's the most polished product in the category) but because I'd rather have an agent work in my terminal than open any graphical UI.
 
-So I had an agent deconstruct Claude Design itself (including the system prompts circulating in the community, the brand asset protocol, the component mechanics), distill it into a structured spec, then write it as a skill installed in my own Claude Code.
+So I had an agent deconstruct Antigravity Design itself (including the system prompts circulating in the community, the brand asset protocol, the component mechanics), distill it into a structured spec, then write it as a skill installed in my own Antigravity.
 
-Thanks to Anthropic for writing the Claude Design prompts so clearly. This kind of derivative work inspired by other products is the new form of open-source culture in the AI era.
+Thanks to Anthropic for writing the Antigravity Design prompts so clearly. This kind of derivative work inspired by other products is the new form of open-source culture in the AI era.
 
 ---
 
