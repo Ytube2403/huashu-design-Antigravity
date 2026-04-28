@@ -1,11 +1,10 @@
-<sub>🌐 <a href="README.en.md">English</a> · <b>中文</b></sub>
+<sub>🌐 <a href="README.en.md">English</a> · <b>Tiếng Việt</b></sub>
 
 <div align="center">
 
-# Huashu Design
+# Huashu Design (Dành cho Antigravity)
 
-> *「打字。回车。一份能交付的设计。」*
-> *"Type. Hit enter. A finished design lands in your lap."*
+> *「Gõ yêu cầu. Nhấn Enter. Nhận về một bản thiết kế hoàn chỉnh.」*
 
 [![License](https://img.shields.io/badge/License-Personal%20Use%20Only-orange.svg)](LICENSE)
 [![Agent-Agnostic](https://img.shields.io/badge/Agent-Agnostic-blueviolet)](https://skills.sh)
@@ -13,312 +12,177 @@
 
 <br>
 
-**在你的 agent 里打一句话，拿回一份能交付的设计。**
+**Chỉ cần trò chuyện với Antigravity, bạn sẽ nhận được một thiết kế sẵn sàng để bàn giao.**
 
 <br>
 
-3 到 30 分钟，你能 ship 一段**产品发布动画**、一个能点击的 App 原型、一套能编辑的 PPT、一份印刷级的信息图。
+Chỉ từ 3 đến 30 phút, bạn có thể hoàn thành một **đoạn video ra mắt sản phẩm**, một bản mẫu (prototype) App có thể bấm tương tác được, một bộ slide PowerPoint có thể chỉnh sửa, hoặc một đồ họa thông tin (infographic) chuẩn in ấn.
 
-不是「AI 做的还行」那种水平——是看起来像大厂设计团队做的。给 skill 你的品牌资产（logo、色板、UI 截图），它会读懂你的品牌气质；什么都不给，内置的 20 种设计语汇也能兜底到不出 AI slop。
+Chất lượng không dừng ở mức "AI làm tàm tạm" — nó trông giống như tác phẩm của một đội ngũ thiết kế chuyên nghiệp. Nếu bạn cung cấp các tài sản thương hiệu (logo, bảng màu, ảnh chụp UI), kỹ năng (skill) này sẽ hiểu và thấm nhuần phong cách thương hiệu của bạn. Nếu không cung cấp gì, hệ thống cũng có sẵn 20 ngôn ngữ thiết kế tích hợp để đảm bảo kết quả luôn đạt mức thẩm mỹ cao, không bị lỗi thiết kế AI (AI slop).
 
-**你看到这篇 README 里的每一个动画，都是 huashu-design 自己做的。** 不是 Figma，不是 AE，就是一句话 prompt + skill 跑通。下次产品发布要做宣传片？现在你也能做。
+**Mọi hiệu ứng animation bạn thấy trong README này đều do chính huashu-design tự tạo ra.** Không dùng Figma, không dùng After Effects. Chỉ cần một câu lệnh prompt + chạy skill. Lần tới bạn cần làm video ra mắt sản phẩm? Giờ đây chính bạn cũng có thể tự làm được.
 
-```
+```bash
 Sao chép thư mục vào ~/.gemini/antigravity/skills/huashu-design-Antigravity
 ```
 
-跨 agent 通用——Antigravity、Cursor、Codex、OpenClaw、Hermes 都能装。
+Dành riêng và tương thích hoàn toàn với **Antigravity**.
 
-[看效果](#demo-画廊) · [安装](#装上就能用) · [能做什么](#能做什么) · [核心机制](#核心机制) · [和 Antigravity Design 的关系](#和-huashu-design-Antigravity-的关系)
+[Xem thư viện Demo](#thư-viện-demo) · [Cài đặt & Sử dụng](#cài-đặt--sử-dụng-ngay) · [Tính năng](#các-tính-năng-chính) · [Cơ chế cốt lõi](#cơ-chế-cốt-lõi)
 
 </div>
 
 ---
 
 <p align="center">
-  <img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/hero-animation-v10-en.gif" alt="huashu-design Hero · 打字 → 选方向 → 画廊展开 → 聚焦 → 品牌显形" width="100%">
+  <img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/hero-animation-v10-en.gif" alt="huashu-design Hero · Typing → Choosing directions → Gallery expansion → Focus → Brand reveal" width="100%">
 </p>
 
 <p align="center"><sub>
-  ▲ 25 秒 · Terminal → 4 方向 → Gallery ripple → 4 次 Focus → Brand reveal<br>
-  👉 <a href="https://www.huasheng.ai/huashu-design-hero/">访问带音效的 HTML 互动版</a> ·
-  <a href="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/hero-animation-v10-en.mp4">下载 MP4（含 BGM+SFX · 10MB）</a>
+  ▲ 25 Giây · Terminal → 4 Hướng phong cách → Gallery ripple → 4 Lần Focus → Hiển thị thương hiệu<br>
+  👉 <a href="https://www.huasheng.ai/huashu-design-hero/">Truy cập bản tương tác HTML có âm thanh</a> ·
+  <a href="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/hero-animation-v10-en.mp4">Tải MP4 (Bao gồm BGM+SFX · 10MB)</a>
 </sub></p>
 
 ---
 
-## 装上就能用
+## Cài đặt & Sử dụng ngay
 
-```bash
-Sao chép thư mục vào ~/.gemini/antigravity/skills/huashu-design-Antigravity
+Skill này đã được tải về trực tiếp. Để sử dụng trong **Antigravity**, chỉ cần mở chat và đưa ra yêu cầu:
+
+```text
+"Hãy làm một slide thuyết trình về AI Tâm lý học, đề xuất cho tôi 3 hướng phong cách để chọn."
+"Tạo một bản mẫu (prototype) iOS cho app đếm ngược (Pomodoro), thiết kế 4 màn hình có thể bấm qua lại được."
+"Biến đoạn văn bản logic này thành một video animation dài 60 giây, xuất ra dạng MP4 và GIF."
+"Hãy đóng vai chuyên gia và đánh giá bản thiết kế này theo 5 tiêu chí."
 ```
 
-然后在 Antigravity 里直接说话：
-
-```
-「做一份 AI 心理学的演讲 PPT，推荐 3 个风格方向让我选」
-「做个 AI 番茄钟 iOS 原型，4 个核心屏幕要真能点击」
-「把这段逻辑做成 60 秒动画，导出 MP4 和 GIF」
-「帮我对这个设计做一个 5 维度评审」
-```
-
-没有按钮、没有面板、没有 Figma 插件。
+Không cần nút bấm, không cần bảng điều khiển phức tạp, không cần cài đặt thêm plugin cho Figma.
 
 ---
 
-## Star 趋势
+## Các Tính Năng Chính
 
-<p align="center">
-  <a href="https://star-history.com/#alchaincyf/huashu-design&Date">
-    <img src="https://api.star-history.com/svg?repos=alchaincyf/huashu-design&type=Date" alt="huashu-design Star History" width="80%">
-  </a>
-</p>
-
----
-
-## 能做什么
-
-| 能力 | 交付物 | 典型耗时 |
+| Khả năng | Sản phẩm đầu ra | Thời gian (ước tính) |
 |------|--------|----------|
-| 交互原型（App / Web） | 单文件 HTML · 真 iPhone bezel · 可点击 · Playwright 验证 | 10–15 min |
-| 演讲幻灯片 | HTML deck（浏览器演讲）+ 可编辑 PPTX（文本框保留） | 15–25 min |
-| 时间轴动画 | MP4（25fps / 60fps 插帧）+ GIF（palette 优化）+ BGM | 8–12 min |
-| 设计变体 | 3+ 并排对比 · Tweaks 实时调参 · 跨维度探索 | 10 min |
-| 信息图 / 可视化 | 印刷级排版 · 可导 PDF/PNG/SVG | 10 min |
-| 设计方向顾问 | 5 流派 × 20 种设计哲学 · 推荐 3 方向 · 并行生成 Demo | 5 min |
-| 5 维度专家评审 | 雷达图 + Keep/Fix/Quick Wins · 可操作修复清单 | 3 min |
+| **Prototype Tương tác (App/Web)** | Một file HTML duy nhất · Hiển thị giao diện iPhone chân thực · Clickable (Bấm được) · Hỗ trợ Playwright test | 10–15 phút |
+| **Slide Thuyết Trình** | HTML deck (Chiếu trên trình duyệt) + Có thể xuất ra file PowerPoint (PPTX) hỗ trợ chỉnh sửa chữ | 15–25 phút |
+| **Motion Design (Animation)** | File MP4 (25fps / 60fps) + GIF (tối ưu bảng màu) + Nhạc nền (BGM) | 8–12 phút |
+| **Gợi ý Biến thể Thiết kế** | Xem so sánh 3+ phong cách cạnh nhau · Tweak trực tiếp qua bảng điều khiển · Thử nghiệm đa chiều | 10 phút |
+| **Infographic / Biểu đồ Dữ liệu** | Dàn trang chuẩn in ấn (Magazine-level) · Xuất ra file PDF/PNG/SVG | 10 phút |
+| **Cố Vấn Hướng Thiết Kế** | Tổng hợp 5 trường phái × 20 triết lý thiết kế · Đề xuất 3 định hướng · Chạy song song tạo Demo | 5 phút |
+| **Chuyên gia Đánh giá (5 Tiêu chí)** | Đánh giá qua biểu đồ Radar + Checklist (Keep/Fix/Quick Wins) hành động ngay | 3 phút |
 
 ---
 
-## Demo 画廊
+## Thư viện Demo
 
-### 设计方向顾问
+### Cố vấn Định hướng (Fallback Advisor)
 
-模糊需求时的 fallback：从 5 流派 × 20 种设计哲学里挑 3 个差异化方向，并行生成 3 个 Demo 让你选。
+Khi yêu cầu của bạn quá chung chung: Skill sẽ không "làm bừa", mà sẽ tự động gọi chế độ Fallback, gợi ý 3 định hướng thiết kế khác nhau (từ bộ 20 triết lý), sau đó làm ra 3 bản demo riêng biệt để bạn chọn phong cách ưng ý nhất.
 
 <p align="center"><img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/w3-fallback-advisor.gif" width="100%"></p>
 
-### iOS App 原型
+### Bản mẫu App iOS (iOS App Prototype)
 
-iPhone 15 Pro 精确机身（灵动岛 / 状态栏 / Home Indicator）· 状态驱动多屏切换 · 真图从 Wikimedia/Met/Unsplash 取 · Playwright 自动点击测试。
+Hiển thị kích thước iPhone 15 Pro chuẩn (kèm Dynamic Island, thanh trạng thái). Hỗ trợ chuyển qua lại nhiều màn hình và lấy hình ảnh thực tế từ Wikimedia/Unsplash.
 
 <p align="center"><img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/c1-ios-prototype.gif" width="100%"></p>
 
-### Motion Design 引擎
+### Động cơ Thiết kế Chuyển động (Motion Design Engine)
 
-Stage + Sprite 时间片段模型 · `useTime` / `useSprite` / `interpolate` / `Easing` 四 API 覆盖所有动画需求 · 一条命令导出 MP4 / GIF / 60fps 插帧 / 带 BGM 的成片。
+Hỗ trợ các API như `useTime`, `useSprite`, `interpolate` để bao quát mọi nhu cầu Animation. Có script đi kèm cho phép xuất ra MP4 hoặc GIF 60fps có kèm nhạc nền.
 
 <p align="center"><img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/c3-motion-design.gif" width="100%"></p>
 
-### HTML Slides → 可编辑 PPTX
+### Từ HTML Slides sang PowerPoint (Chỉnh sửa được)
 
-HTML deck 浏览器演讲 · `html2pptx.js` 读 DOM 的 computedStyle 逐元素翻译成 PowerPoint 对象 · 导出的是**真文本框**，PPT 里双击即可编辑。
+Tạo Slide trình chiếu dưới định dạng HTML, sau đó dùng `html2pptx.js` để đọc toàn bộ giao diện và dịch nó sang đối tượng PowerPoint, **giữ nguyên khung văn bản (Textboxes)** để bạn có thể bấm vào chữ và sửa được trên PowerPoint.
 
 <p align="center"><img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/c2-slides-pptx.gif" width="100%"></p>
 
-### Tweaks · 实时变体切换
+### Bảng Điều khiển (Tweaks)
 
-配色 / 字型 / 信息密度等参数化 · 侧边面板切换 · 纯前端 + `localStorage` 持久化 · 刷新不丢。
+Có thể cài đặt các thông số (Màu sắc, Font, Độ đậm nhạt...) và chỉnh qua bảng điều khiển hiển thị ở cạnh màn hình. Cấu hình được lưu lại tại `localStorage`.
 
 <p align="center"><img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/c4-tweaks.gif" width="100%"></p>
 
-### 信息图 / 数据可视化
+### Trình bày Dữ liệu & Infographic
 
-杂志级排版 · CSS Grid 精准分栏 · `text-wrap: pretty` 排印细节 · 真数据驱动 · 可导 PDF 矢量 / PNG 300dpi / SVG。
+Dàn trang dạng tạp chí dùng CSS Grid, tự động ngắt dòng thông minh (`text-wrap: pretty`), chạy bằng dữ liệu thực. Có thể xuất thẳng ra PDF vector.
 
 <p align="center"><img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/c5-infographic.gif" width="100%"></p>
 
-### 5 维度专家评审
+### Workflow Thiết Kế Thương Hiệu (Brand Asset Protocol)
 
-哲学一致性 · 视觉层级 · 细节执行 · 功能性 · 创新性 各 0–10 分 · 雷达图可视化 · 输出 Keep / Fix / Quick Wins 清单。
-
-<p align="center"><img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/c6-expert-review.gif" width="100%"></p>
-
-### Junior Designer 工作流
-
-不闷头做大招：先写 assumptions + placeholders + reasoning，尽早 show 给你，再迭代。理解错了早改比晚改便宜 100 倍。
-
-<p align="center"><img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/w2-junior-designer.gif" width="100%"></p>
-
-### 品牌资产协议 5 步硬流程
-
-涉及具体品牌时强制执行：问 → 搜 → 下载（三条兜底）→ grep 色值 → 写 `brand-spec.md`。
+Gồm 5 bước bắt buộc khi cần làm thiết kế cho một thương hiệu có thật: Hỏi ý kiến -> Lên trang chủ tìm -> Tải logo (SVG/HTML) -> Phân tích mã màu (Hex/RGB) -> Viết tệp `brand-spec.md` để áp dụng màu đó một cách chuẩn xác. Không bao giờ đoán bừa màu thương hiệu.
 
 <p align="center"><img src="https://github.com/alchaincyf/huashu-design/releases/download/v2.0/w1-brand-protocol.gif" width="100%"></p>
 
 ---
 
-## Showcase · 真实案例
+## Cơ Chế Cốt Lõi
 
-### 「聊聊 skill」 · PM after-party 演讲 deck
+### Giao thức Nhận diện Thương hiệu (Brand Asset Protocol)
 
-> **Live demo · [https://skill-huasheng.vercel.app](https://skill-huasheng.vercel.app)**
+Một quy tắc cực kì "cứng" của skill. Khi yêu cầu liên quan đến các thương hiệu cụ thể (Stripe, Apple, hoặc công ty của bạn), 5 bước sau sẽ được kích hoạt:
 
-13 页 HTML deck，**全部用 huashu-design 完成**：
-
-- 黑底极简衬线视觉系统（cover / about / hook / what / why / closing）
-- 2 个带 BGM + SFX 的 22 秒 cinematic demo（Nuwa skill workflow + Darwin skill workflow），各采用**完全独立的视觉语言**：
-  - **Nuwa**：3D 知识 orbit + Pentagon 提炼 + SKILL.md typewriter + 「21 分钟」hero reveal
-  - **Darwin**：autoresearch loop spin + v1/v5 并列 diff + Hill-Climb 全屏曲线 + Ratchet gear lock
-- 每个 cinematic 默认显示**完整静态 workflow dashboard**（观众随时能看清 skill 怎么跑），点 ▶ 才触发动画，跑完自动 fade 回 dashboard
-- 嵌入 huasheng.ai 的 25 秒 hero 动画（iframe 本地化兜底）
-- 真实数据：14,495 stargazers 真实曲线（gh API 拉取）+ DeepSeek V4 真实 specs（WebSearch 验证）
-- 真实 AI 素材：用 `huashu-gpt-image` 跑 4×2 grid 大图，`extract_grid.py` 抠出 8 张独立透明 PNG，做 3D orbit 漂浮
-
-**适合参考的页面**：
-- `/slides/slide-04b-nuwa-flow.html` · 静态 dashboard + cinematic overlay 双层架构
-- `/slides/slide-06b-darwin-flow.html` · 完全独立视觉语言的对照案例
-- `/slides/slide-03b-deepseek-cover.html` · AI slop vs 真实设计师视角的对比页
-
-详细 cinematic patterns 见 `references/cinematic-patterns.md`。
-
----
-
-## 核心机制
-
-### 品牌资产协议
-
-skill 里最硬的一段规则。涉及具体品牌（Stripe、Linear、Anthropic、自家公司等）时强制执行 5 步：
-
-| 步骤 | 动作 | 目的 |
+| Bước | Hành động | Mục đích |
 |------|------|------|
-| 1 · 问 | 用户有 brand guidelines 吗？ | 尊重已有资源 |
-| 2 · 搜官方品牌页 | `<brand>.com/brand` · `brand.<brand>.com` · `<brand>.com/press` | 抓权威色值 |
-| 3 · 下载资产 | SVG 文件 → 官网 HTML 全文 → 产品截图取色 | 三条兜底，前一条失败立刻走下一条 |
-| 4 · grep 提取色值 | 从资产里抓所有 `#xxxxxx`，按频率排序，过滤黑白灰 | **绝不从记忆猜品牌色** |
-| 5 · 固化 spec | 写 `brand-spec.md` + CSS 变量，所有 HTML 引用 `var(--brand-*)` | 不固化就会忘 |
+| 1 · Hỏi | Hỏi người dùng xem họ có bộ hướng dẫn nhận diện thương hiệu không? | Tôn trọng nguồn tài nguyên có sẵn |
+| 2 · Truy cập web | Tìm trên `<brand>.com/brand` hoặc `<brand>.com/press` | Lấy bảng màu từ nguồn chính thống |
+| 3 · Tải tài nguyên | Tải SVG → HTML trang chủ → Chụp màn hình để trích xuất màu | Các biện pháp dự phòng liên tiếp |
+| 4 · Phân tích mã màu | Tìm tất cả mã hex `#xxxxxx`, lọc bỏ trắng đen, lấy màu chủ đạo | **Tuyệt đối không đoán bừa màu thương hiệu từ bộ nhớ của AI** |
+| 5 · Lưu cấu hình | Lưu tệp `brand-spec.md` + biến CSS `var(--brand-*)` | Giúp nhất quán thiết kế sau này |
 
-A/B 测试（v1 vs v2，各跑 6 agent）：**v2 的稳定性方差比 v1 低 5 倍**。稳定性的稳定性，这是 skill 真正的护城河。
+### Chống lại giao diện kiểu "AI Slop"
 
-### 设计方向顾问（Fallback）
-
-当用户需求模糊到无法着手时触发：
-
-- 不凭通用直觉硬做，进入 Fallback 模式
-- 从 5 流派 × 20 种设计哲学里推荐 3 个**必须来自不同流派**的差异化方向
-- 每个方向配代表作、气质关键词、代表设计师
-- 并行生成 3 个视觉 Demo 让用户选
-- 选定后进入主干 Junior Designer 流程
-
-### Junior Designer 工作流
-
-默认工作模式，贯穿所有任务：
-
-- 开工前 show 问题清单一次性发给用户，等批量答完再动手
-- HTML 里先写 assumptions + placeholders + reasoning comments
-- 尽早 show 给用户（哪怕只是灰色方块）
-- 填充实际内容 → variations → Tweaks 这三步分别再 show 一次
-- 交付前用 Playwright 肉眼过一遍浏览器
-
-### 反 AI slop 规则
-
-避免一眼 AI 的视觉最大公约数（紫渐变 / emoji 图标 / 圆角+左 border accent / SVG 画人脸 / Inter 做 display）。用 `text-wrap: pretty` + CSS Grid + 精心选择的 serif display 和 oklch 色彩。
+Skill này được thiết lập để tránh các thiết kế nhìn "sặc mùi AI" (như gradient màu tím sến, icon emoji, mặt người nhợt nhạt vẽ bằng SVG...). Thay vào đó nó dùng Typography tiêu chuẩn in ấn, CSS Grid và hệ thống phối màu chuyên nghiệp oklch.
 
 ---
 
-## 和 Antigravity Design 的关系
+## Sự khác biệt so với các sản phẩm GUI 
 
-我大方承认：品牌资产协议的哲学是从 Antigravity Design 流传出来的提示词里偷师的。那份提示词反复强调**好的高保真设计不是从白纸开始，而是从已有的设计上下文长出来**。这个原则是 65 分作品和 90 分作品的分水岭。
+Ý tưởng về giao thức Thương hiệu bắt nguồn từ các bài học tạo Design System tiên tiến: **Một bản thiết kế tuyệt vời không bắt đầu từ trang giấy trắng, mà nó phát triển từ bối cảnh và định dạng phong cách đã có**. Đó là lằn ranh giữa một bản phác thảo 65 điểm và một tác phẩm 90 điểm.
 
-定位差异：
-
-| | Antigravity Design | huashu-design |
-|---|---|---|
-| 形态 | 网页产品（浏览器里用） | skill（Antigravity 里用） |
-| 配额 | 订阅 quota | API 消耗 · 并行跑 agent 不受 quota 限 |
-| 交付物 | 画布内 + 可导 Figma | HTML / MP4 / GIF / 可编辑 PPTX / PDF |
-| 操作方式 | GUI（点、拖、改） | 对话（说话、等 agent 做完） |
-| 复杂动画 | 有限 | Stage + Sprite 时间轴 · 60fps 导出 |
-| 跨 agent | 专属 Antigravity | 任意 skill 兼容 agent |
-
-Antigravity Design 是**更好的图形工具**，huashu-design 是**让图形工具这层消失**。两条路，不同受众。
+Nếu như các phần mềm giao diện đồ họa (GUI) hay Figma là **những công cụ đồ họa tốt hơn**, thì mục tiêu của Antigravity huashu-design là **làm cho lớp giao diện công cụ đó biến mất**. Bạn không cần thao tác chuột, chỉ cần ra lệnh. 
 
 ---
 
-## Limitations
+## Hạn chế (Limitations)
 
-- **不支持图层级可编辑的 PPTX 到 Figma**。产出 HTML，可截图、录屏、导图，但不能拖进 Keynote 改文字位置。
-- **Framer Motion 级别的复杂动画不行**。3D、物理模拟、粒子系统超出 skill 边界。
-- **完全空白的品牌从零设计质量会掉到 60–65 分**。凭空画 hi-fi 本来就是 last resort。
-
-这是一个 80 分的 skill，不是 100 分的产品。对不愿意打开图形界面的人，80 分的 skill 比 100 分的产品好用。
+- **Không hỗ trợ chuyển PPTX sang Figma**. Bạn có thể xuất HTML, quay video, xuất PDF, xuất PowerPoint, nhưng không thể ném tệp đó vào thiết kế Keynote để thay thế vector chi tiết.
+- **Không hỗ trợ Animation phức tạp dạng Framer Motion**. Không xử lý thiết kế vật lý, 3D thật, hệ thống hạt (particle systems).
+- **Với thương hiệu không có bất kỳ nguồn dữ liệu nào (Trang trắng hoàn toàn), chất lượng thiết kế có thể chỉ đạt 60-65 điểm.** Thiết kế đẹp luôn cần điểm tựa phong cách.
 
 ---
 
-## 仓库结构
+## Cấu Trúc Thư Mục
 
 ```
-huashu-design/
-├── SKILL.md                 # 主文档（给 agent 读）
-├── README.md                # 本文件（给用户读）
-├── assets/                  # Starter Components
-│   ├── animations.jsx       # Stage + Sprite + Easing + interpolate
-│   ├── ios_frame.jsx        # iPhone 15 Pro bezel
-│   ├── android_frame.jsx
-│   ├── macos_window.jsx
-│   ├── browser_window.jsx
-│   ├── deck_stage.js        # HTML 幻灯片引擎
-│   ├── deck_index.html      # 多文件 deck 拼接器
-│   ├── design_canvas.jsx    # 并排变体展示
-│   ├── showcases/           # 24 个预制样例（8 场景 × 3 风格）
-│   └── bgm-*.mp3            # 6 首场景化背景音乐
-├── references/              # 按任务深入读的子文档
-│   ├── animation-pitfalls.md
-│   ├── design-styles.md     # 20 种设计哲学详细库
-│   ├── slide-decks.md
-│   ├── editable-pptx.md
-│   ├── critique-guide.md
-│   ├── video-export.md
-│   └── ...
-├── scripts/                 # 导出工具链
-│   ├── render-video.js      # HTML → MP4
-│   ├── convert-formats.sh   # MP4 → 60fps + GIF
-│   ├── add-music.sh         # MP4 + BGM
-│   ├── export_deck_pdf.mjs
-│   ├── export_deck_pptx.mjs
-│   ├── html2pptx.js
-│   └── verify.py
-└── demos/                   # 9 个能力演示 (c*/w*)，中英双版 GIF/MP4/HTML + hero v10
+huashu-design-Antigravity/
+├── SKILL.md                 # Tài liệu hướng dẫn chính (Dành cho AI Agent)
+├── README.md                # Tệp này (Dành cho người dùng đọc)
+├── assets/                  # Các thành phần cốt lõi
+│   ├── animations.jsx       # Bộ Engine: Stage + Sprite + Easing + interpolate
+│   ├── ios_frame.jsx        # Khung iPhone 15 Pro bezel
+│   ├── deck_stage.js        # Engine xử lý HTML Slide
+│   └── ...                  # (Các showcase demo & nhạc nền)
+├── references/              # Tài liệu tham khảo sâu cho từng tác vụ
+├── scripts/                 # Chuỗi công cụ xuất ra file Video, PDF, PPTX
+│   ├── render-video.js      # Trình render HTML → MP4
+│   ├── convert-formats.sh   # Chuyển đổi MP4 → 60fps / GIF
+│   ├── export_deck_pptx.mjs # Xuất HTML sang tệp PPTX
+│   └── html2pptx.js         # Engine quy đổi HTML sang PowerPoint Object
+└── demos/                   # Demo GIF/MP4 giới thiệu các năng lực
 ```
 
 ---
 
-## 起源
+## Giấy Phép Sử Dụng (License)
 
-Anthropic 发布 Antigravity Design 那天我玩到凌晨四点。几天之后发现自己再也没点开过它，不是它不好——它是这个赛道目前最成熟的产品——是我宁愿让 agent 在终端里帮我干活，也不愿意打开任何图形界面。
+**Miễn phí và Tự do cho Cá nhân** — Bạn có thể học tập, nghiên cứu, sáng tạo, làm dự án cá nhân, viết bài, chạy project ngoài giờ thoải mái.
 
-于是让 agent 拆解 Antigravity Design 本身（包括社区流传的系统提示词、品牌资产协议、组件机制），蒸馏成结构化 spec，再写成 skill 装进自己的 Antigravity。
+**Nghiêm cấm Thương mại hóa cho Doanh nghiệp** — Các tổ chức, công ty, đội nhóm muốn dùng công cụ này để kiếm lợi nhuận, tích hợp vào sản phẩm thương mại hoặc dùng làm công cụ bàn giao cho khách hàng bắt buộc phải liên hệ cấp phép bản quyền.
 
-感谢 Anthropic 把 Antigravity Design 的提示词写得清晰。这种基于其他产品灵感的二次创作，是开源文化在 AI 时代的新形态。
-
----
-
-## License · 使用授权
-
-**个人使用免费、自由**——学习、研究、创作、给自己做东西、写文章、做副业、发微博发公众号，随便用，不用打招呼。
-
-**企业商用禁止**——任何公司、团队、或以盈利为目的的组织，想把本 skill 集成到产品、对外服务、给客户交付工作中使用，**必须先和花生联系获得授权**。包括但不限于：
-- 把 skill 作为公司内部工具链的一部分
-- 把 skill 产出物作为对外交付物的主要创作手段
-- 基于 skill 二次开发做成商业产品
-- 在客户商单项目中使用
-
-**商用授权联系方式**见下方社交平台。
-
----
-
-## Connect · 花生（花叔）
-
-花生是 AI Native Coder、独立开发者、AI 自媒体博主。代表作：小猫补光灯（AppStore 付费榜 Top 1）、《一本书玩转 DeepSeek》、女娲 .skill（GitHub 12000+ star）。自媒体全平台 30 万+ 粉丝。
-
-| 平台 | 账号 | 链接 |
-|---|---|---|
-| X / Twitter | @AlchainHust | https://x.com/AlchainHust |
-| 公众号 | 花叔 | 微信搜索「花叔」 |
-| B 站 | 花叔 | https://space.bilibili.com/14097567 |
-| YouTube | 花叔 | https://www.youtube.com/@Alchain |
-| 小红书 | 花叔 | https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf |
-| 官网 | huasheng.ai | https://www.huasheng.ai/ |
-| 开发者主页 | bookai.top | https://bookai.top |
-
-商用授权、合作咨询、自媒体约稿 → 以上任一平台私信花生即可。
+*(Dự án huashu-design ban đầu được phát triển bởi tác giả Alchain/Huasheng)*
